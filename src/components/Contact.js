@@ -1,7 +1,7 @@
 import React from "react";
+import { FaLinkedin, FaGithub } from "react-icons/fa6";
+import { IoIosMail } from "react-icons/io";
 import "./Styles/Contact.css"; // Stelle sicher, dass du eine separate CSS-Datei für das Styling importierst
-
-
 
 function Contact() {
   return (
@@ -13,33 +13,21 @@ function Contact() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
-            src="/pics/LinkedIn_Logo.png"
-            alt="LinkedIn"
-            className="contact-icon"
-          />
+          <FaLinkedin className="contact-icon" size={40} />
         </a>
         <a
           href="https://github.com/bien187"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
-            src="/pics/1673867242172.jpeg"
-            alt="GitHub"
-            className="contact-icon"
-          />
+          <FaGithub className="contact-icon" size={40} />
         </a>
         <a
           href="mailto:Ben.Linus.Mueller@outlook.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
-            src="/pics/Outlook-1000x600.png"
-            alt="Outlook"
-            className="contact-icon"
-          />
+          <IoIosMail className="contact-icon" size={40} />
         </a>
       </div>
     </div>
