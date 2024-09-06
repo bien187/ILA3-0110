@@ -20,13 +20,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px; /* Abstand zwischen den Icons */
+    gap: 80px; /* Abstand zwischen den Icons */
+    margin-top: 30px;
   }
   
   .contact-icon {
     width: auto;
     height: 14rem;
     transition: transform 0.3s ease; /* Animation beim Hover */
+    color: #000; /* Schwarze Icons */
   }
   
   .contact-icon:hover {
