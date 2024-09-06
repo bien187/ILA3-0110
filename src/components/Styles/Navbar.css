@@ -83,20 +83,22 @@
 }
 
 /* Das Hamburger-Menü für kleine Bildschirme anzeigen */
-@media (max-width: 700px) and (orientation: portrait) {
+@media (max-width: 844px) and (orientation: portrait) {
   .navbar {
     width: 100%;
-    max-width: 3000px;
-    height: 8%;
-    flex-direction: column;
+    height: 8vh; /* 8% der Viewport-Höhe */
+    flex-direction: row;
     justify-content: flex-start;
-    border-radius: 5px;
+    padding: 0 20px;
+    border-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .nav-links {
     display: none;
     flex-direction: column;
-    width: 1000%;
+    width: 100%;
     margin-top: 38px;
     background-color: #333;
     border-radius: 5px;
@@ -117,6 +119,29 @@
   }
 }
 
+/* Querformat - Navbar bleibt links */
+@media (max-width: 844px) and (orientation: landscape) {
+  .navbar {
+    width: 97px;
+    height: 100vh; /* Navbar füllt die volle Höhe des Bildschirms */
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    border-radius: 0; /* Keine abgerundeten Ecken */
+  }
+
+  .nav-links {
+    display: flex;
+    margin-top: 10px;
+    background-color: #333;
+    border-radius: 0;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}
+
 /* Feinabstimmung für sehr kleine Bildschirme */
 @media (max-width: 450px) and (orientation: portrait) {
   .nav-item {
@@ -125,11 +150,19 @@
   }
 
   .navbar {
-    padding: 0.5% 0;
     height: 60px;
+    padding: 0 5px;
   }
 
   .main-content {
-    padding-top: 50px;
+    padding-top: 60px;
   }
+}
+
+/* Safe Area Insets für Geräte mit abgerundeten Ecken (z.B. iPhones) */
+.navbar {
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
 }
