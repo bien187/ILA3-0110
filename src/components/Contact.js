@@ -13,21 +13,21 @@ function Contact() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaLinkedin className="contact-icon" size={40} />
+          <FaLinkedin className="contact-icon" size={30} />
         </a>
         <a
           href="https://github.com/bien187"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaGithub className="contact-icon" size={40} />
+          <FaGithub className="contact-icon" size={30} />
         </a>
         <a
           href="mailto:Ben.Linus.Mueller@outlook.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <IoIosMail className="contact-icon" size={40} />
+          <IoIosMail className="contact-icon" size={30} />
         </a>
       </div>
     </div>
