@@ -83,7 +83,7 @@
 }
 
 /* Das Hamburger-Menü für kleine Bildschirme anzeigen */
-@media (max-width: 844px) and (orientation: portrait) {
+@media (max-width: 700px) and (orientation: portrait) {
   .navbar {
     width: 100%;
     max-width: 3000px;
