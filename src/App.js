@@ -1,12 +1,17 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-import Navbar from './components/Navbar';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
+import Navbar from "./components/Navbar";
 
-import AboutMe from './components/AboutMe';
-import Projects from './components/Projects';
-import Hobbies from './components/Hobbies';
-import Contact from './components/Contact';
-import Home from './components/Home';
+import AboutMe from "./components/AboutMe";
+import Projects from "./components/Projects";
+import Hobbies from "./components/Hobbies";
+import Contact from "./components/Contact";
+import Home from "./components/Home";
 
 const App = () => {
   return (

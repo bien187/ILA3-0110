@@ -1,7 +1,24 @@
 import React from "react";
 import "./Styles/AboutMe.css";
 
+// Funktion zur Berechnung des Alters
+const calculateAge = (birthDate) => {
+  const today = new Date();
+  const birth = new Date(birthDate);
+  let age = today.getFullYear() - birth.getFullYear();
+  const monthDifference = today.getMonth() - birth.getMonth();
+  
+  if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birth.getDate())) {
+    age--;
+  }
+  
+  return age;
+};
+
 const AboutMe = () => {
+  const birthDate = '2007-02-27'; // Geburtsdatum im Format YYYY-MM-DD
+  const age = calculateAge(birthDate);
+
   return (
     <div className="aboutme-wrapper">
       {/* About Me Section */}
@@ -16,7 +33,7 @@ const AboutMe = () => {
           <div className="right-side">
             <div className="info-box">
               <h3>Alter</h3>
-              <p>17 Jahre</p>
+              <p>{age} Jahre</p>
             </div>
             <div className="info-box">
               <h3>Geburtsdatum</h3>
@@ -42,14 +59,6 @@ const AboutMe = () => {
       <section className="skills-section">
         <h2>Meine Fähigkeiten</h2>
 
-        {/* Skill Level Headers 
-        <div className="skill-levels">
-          <span>Grundkenntnisse</span>
-          <span>Fortgeschrittene Kenntnisse</span>
-          <span>Erfahren</span>
-          <span>Experte</span>
-        </div>
-          */}
         <div className="skills-container">
           {/* Frontend Skills */}
           <h3>Frontend</h3>
@@ -85,11 +94,16 @@ const AboutMe = () => {
             </div>
           </div>
         
-
           {/* Backend Skills */}
           <h3>Backend</h3>
           <div className="skill">
             <span>.NET</span>
+            <div className="progress-bar">
+              <div className="progress" style={{ width: "75%" }}></div>
+            </div>
+          </div>
+          <div className="skill">
+            <span>C#</span>
             <div className="progress-bar">
               <div className="progress" style={{ width: "75%" }}></div>
             </div>
@@ -112,7 +126,7 @@ const AboutMe = () => {
           <div className="skill">
             <span>SQL</span>
             <div className="progress-bar">
-              <div className="progress" style={{ width: "25%" }}></div>
+              <div className="progress" style={{ width: "50%" }}></div>
             </div>
           </div>
         </div>
