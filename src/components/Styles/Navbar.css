@@ -23,7 +23,7 @@
 .nav-links {
   display: flex;
   flex-direction: column;
-  margin-top: 60px; /* Platz für das Menü-Icon */
+  margin-top: 60px;
 }
 
 .nav-item {
@@ -64,17 +64,16 @@
   width: 10%;
   height: 21px;
   cursor: pointer;
-  margin-bottom: 20px; /* Abstand nach unten */
+  margin-bottom: 20px;
   position: fixed;
   top: 5px;
   left: 10px;
-  z-index: 1100; /* Sicherstellen, dass es über dem Inhalt liegt */
-  background-color: #333; /* Hintergrundfarbe für das Menü-Icon */
-  padding: 8px; /* Etwas Padding hinzufügen */
-  border-radius: 5px; /* Abgerundete Ecken für besseren Look */
+  z-index: 1100;
+  background-color: #333;
+  padding: 8px;
+  border-radius: 5px;
 }
 
-/* Das Menü-Icon */
 .menu-icon {
   background-color: #fff;
   height: 2.5px;
@@ -86,8 +85,8 @@
 /* Das Hamburger-Menü für kleine Bildschirme anzeigen */
 @media (max-width: 844px) {
   .navbar {
-    width: 100%; /* Navbar auf volle Breite setzen */
-    max-width: 3000px; /* Maximale Breite festlegen */
+    width: 100%;
+    max-width: 3000px;
     height: 8%;
     flex-direction: column;
     justify-content: flex-start;
@@ -95,16 +94,16 @@
   }
 
   .nav-links {
-    display: none; /* Standardmäßig ausgeblendet */
+    display: none;
     flex-direction: column;
     width: 1000%;
-    margin-top: 38px; /* Platz für das Menü-Icon */
-    background-color: #333; /* Hintergrundfarbe für das Dropdown-Menü */
+    margin-top: 38px;
+    background-color: #333;
     border-radius: 5px;
   }
 
   .nav-links.open {
-    display: flex; /* Bei geöffnetem Menü anzeigen */
+    display: flex;
   }
 
   .nav-item {
@@ -115,25 +114,6 @@
 
   .menu-toggle {
     display: flex;
-  }
-
-  /* Animationen des Menü-Icons */
-  .menu-icon:nth-child(1) {
-    transform: $ {
-      ismenuopen?"rotate(45deg) translate(5px, 5px)": "none";
-    }
-  }
-
-  .menu-icon:nth-child(2) {
-    opacity: $ {
-      ismenuopen?"0": "1";
-    }
-  }
-
-  .menu-icon:nth-child(3) {
-    transform: $ {
-      ismenuopen?"rotate(-45deg) translate(7px, -6px)": "none";
-    }
   }
 }
 
