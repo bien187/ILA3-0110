@@ -1,0 +1,161 @@
+/* Grundlegende Stile für die Navbar */
+.navbar-header {
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Standard-Layout für größere Bildschirme */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+  height: 100vh;
+  width: 97px;
+  background-color: #333;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: width 0.3s ease;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px; /* Platz für das Menü-Icon */
+}
+
+.nav-item {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  font-size: 120%;
+  padding: 10px 20px;
+  margin: 15px 0;
+  transition: color 0.2s ease;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  color: #c3c3c3;
+}
+
+.nav-item .underline {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.nav-item:hover .underline,
+.nav-item.active .underline {
+  width: 100%;
+}
+
+/* Menü-Toggle für kleine Bildschirme */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 10%;
+  height: 21px;
+  cursor: pointer;
+  margin-bottom: 20px; /* Abstand nach unten */
+  position: fixed;
+  top: 5px;
+  left: 10px;
+  z-index: 1100; /* Sicherstellen, dass es über dem Inhalt liegt */
+  background-color: #333; /* Hintergrundfarbe für das Menü-Icon */
+  padding: 8px; /* Etwas Padding hinzufügen */
+  border-radius: 5px; /* Abgerundete Ecken für besseren Look */
+}
+
+/* Das Menü-Icon */
+.menu-icon {
+  background-color: #fff;
+  height: 2.5px;
+  width: 97%;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+/* Das Hamburger-Menü für kleine Bildschirme anzeigen */
+@media (max-width: 844px) {
+  .navbar {
+    width: 100%; /* Navbar auf volle Breite setzen */
+    max-width: 3000px; /* Maximale Breite festlegen */
+    height: 8%;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 5px;
+  }
+
+  .nav-links {
+    display: none; /* Standardmäßig ausgeblendet */
+    flex-direction: column;
+    width: 1000%;
+    margin-top: 38px; /* Platz für das Menü-Icon */
+    background-color: #333; /* Hintergrundfarbe für das Dropdown-Menü */
+    border-radius: 5px;
+  }
+
+  .nav-links.open {
+    display: flex; /* Bei geöffnetem Menü anzeigen */
+  }
+
+  .nav-item {
+    font-size: 100%;
+    padding: 10px 15px;
+    margin: 0;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  /* Animationen des Menü-Icons */
+  .menu-icon:nth-child(1) {
+    transform: $ {
+      ismenuopen?"rotate(45deg) translate(5px, 5px)": "none";
+    }
+  }
+
+  .menu-icon:nth-child(2) {
+    opacity: $ {
+      ismenuopen?"0": "1";
+    }
+  }
+
+  .menu-icon:nth-child(3) {
+    transform: $ {
+      ismenuopen?"rotate(-45deg) translate(7px, -6px)": "none";
+    }
+  }
+}
+
+/* Feinabstimmung für mittlere Bildschirme */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5% 0;
+  }
+}
+
+/* Feinabstimmung für sehr kleine Bildschirme */
+@media (max-width: 480px) {
+  .nav-item {
+    font-size: 90%;
+    padding: 8px 10px;
+  }
+
+  .navbar {
+    padding: 0.5% 0;
+  }
+
+  .main-content {
+    padding-top: 50px;
+  }
+}

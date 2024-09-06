@@ -1,0 +1,145 @@
+/* Importiere die Schriftart Lato von Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+/* Globaler Stil: Setze die Schriftart auf den gesamten Body */
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* Stil für den Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  z-index: 1000;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+/* Container für die Projekte */
+.projects-container {
+  padding: 40px 20px;
+  margin-left: 120px;
+  text-align: center;
+  background-color: #ffffff;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding-top: 8px;
+}
+
+/* Spezifischere Überschrift-Stile */
+.projects-container h1.project-title {
+  margin-bottom: 3%;
+  color: #000000;
+  font-size: 4.5rem;
+  padding-top: 8px;
+}
+
+/* Gitterlayout für die Projektkarten */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* Spezifischere Projektkarten-Stile */
+.project-card.project-item {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: scale(1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card.project-item:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.03);
+}
+
+/* Spezifischere Bild-Stile */
+.project-image.project-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Spezifischere Stile für den Inhalt der Projektkarten */
+.project-content.project-details {
+  padding: 20px;
+  text-align: left;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Spezifischere Stile für Projektüberschriften */
+.project-content h3.project-title {
+  font-size: 1.8rem;
+  margin-bottom: 7px;
+  color: #333;
+}
+
+/* Spezifischere Stile für die Projektbeschreibung */
+.project-content p.project-description {
+  font-size: 1.1rem; /* Einheitliche Schriftgröße für die Projektbeschreibung */
+  color: #353535;
+  margin-bottom: 15px;
+}
+
+/* Spezifischere Stile für die Links zu Code und Seite */
+.project-links.project-links-container {
+  display: flex;
+  gap: 20px; /* Abstand zwischen den Links */
+  flex-wrap: wrap;
+}
+
+.project-link.project-link-btn,
+.website-link.website-link-btn {
+  font-size: 1.15rem;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.project-link .underline,
+.website-link .underline {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 0;
+  height: 1.5px;
+  background-color: #007bff;
+  transition: width 0.3s ease;
+}
+
+.project-link.project-link-btn:hover .underline,
+.website-link.website-link-btn:hover .underline {
+  width: 100%;
+}
+
+/* Anpassung für kleinere Bildschirme */
+@media (max-width: 768px) {
+  .projects-container {
+    margin-left: 0;
+    padding: 20px;
+    padding-top: 60px;
+  }
+
+  .project-content h3.project-title {
+    font-size: 1.8rem;
+  }
+
+  .project-content p.project-description {
+    font-size: 1rem;
+  }
+}
