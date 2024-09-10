@@ -12,14 +12,14 @@ function Hobbies() {
           <p className="hobbies-description">
             Ich war schon immer sportbegeistert und habe von Turnverein über
             Tennis und Handball schon vieles ausprobiert. Letztendlich blieb ich
-            mit 11 Jahren beim Leichathletik hängen und ich zeigte schnell
+            mit 11 Jahren beim Leichtathletik hängen und ich zeigte schnell
             Talent. Nach 4 Jahren und einigen Medaillen durfte ich dem Aargauer
             Vorkader beitreten und fasste auch dort schnell Fuss. Mit 15 Jahren
             schaffte ich bei einer Regionalausscheidung die Kantonslimite und
             wäre in den kantonalen Kader aufgestiegen. Leider überkreuzten sich
-            meine Trainingszeiten mit der IMS und ich musste mich
-            schwerenherzens dazu entscheiden, mit dem Leichathletik aufzuhören.
-            Mitlerweile gehe ich regelmässig ins Fitnessstudio und finde mit
+            meine Trainingszeiten mit der IMS und ich musste mich schweren
+            Herzens dazu entscheiden, mit der Leichtathletik aufzuhören.
+            Mittlerweile gehe ich regelmässig ins Fitnessstudio und finde mit
             Joggen meinen Ausgleich.
           </p>
         </div>
@@ -28,11 +28,13 @@ function Hobbies() {
           <div className="hobbies-icon aviation-icon"></div>
           <h2 className="hobbies-title">Aviatik</h2>
           <p className="hobbies-description">
-            Seit kleinauf hatte ich grosses Interesse an Flugzeugen und später
-            dann auch an der generellen Aviatik. Neben dem Spielen von
-            Flugsimulatoren wie dem Digital Combat Simulator (DCS) und IL-2
-            Sturmovik besuche ich regelmässig mit Freunden Flugshows in ganz
-            Europa und lebe so mein Interesse an diesem Thema aus.
+            Von klein auf hatte ich grosses Interesse an Flugzeugen und später
+            auch an der Aviatik im Allgemeinen. Angefangen hat alles, als mein
+            Vater mich regelmässig zum Flughafen Zürich mitnahm und wir die
+            startenden und landenden Flugzeuge beobachteten. Heute lebe ich mein
+            Hobby aus, indem ich neben dem Spielen von Flugsimulatoren wie dem
+            Digital Combat Simulator (DCS) und IL-2 Sturmovik auch regelmässig
+            mit meinen Freunden Flugshows in ganz Europa besuche.
           </p>
         </div>
 
@@ -40,11 +42,13 @@ function Hobbies() {
           <div className="hobbies-icon photography-icon"></div>
           <h2 className="hobbies-title">Fotografie</h2>
           <p className="hobbies-description">
-            Ich fotografiere seit ich 13 Jahre alt bin. Ich habe mein Wissen und
-            Können stetig erweitert und mich verbessert. Neben
-            Freizeitfotografie nehme ich meine Kamera auch gerne auf bereits
-            erwähnte Flugshows mit und kann so zwei meiner Hobbies miteinander
-            verknüpfen.
+            Ich fotografiere seit dem ich 11 Jahre alt bin. In den letzten
+            Jahren habe ich mein Können mit viel Ausprobieren, YouTube Tutorials
+            und Büchern stetig erweitert und konnte so bereits viele Erfahrungen
+            im Umgang mit einer Kamera sammeln. Ich fotografiere häufig in
+            meiner Freizeit und in den Ferien. Ausserdem nehme ich meine Kamera
+            auch auf, bereits erwähnte, Flugshows mit und kann so zwei meiner
+            Hobbies zusammen ausleben.
           </p>
           <a
             href="https://adobe.ly/4dQ1fM6"
