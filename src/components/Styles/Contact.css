@@ -1,53 +1,52 @@
 .contact-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Inhalt weiter oben positionieren */
-    align-items: center;
-    height: 100vh; /* Vollbildhöhe */
-    background-color: #ffffff; /* Hintergrundfarbe der Seite */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Inhalt weiter oben positionieren */
+  align-items: center;
+  height: 100vh; /* Vollbildhöhe */
+  background-color: #ffffff; /* Hintergrundfarbe der Seite */
+  padding: 20px;
+  margin-left: 120px; /* Platz für die Navbar reservieren, falls nötig */
+  text-align: center;
+  padding-top: 60px; /* Zusätzlicher Abstand nach oben */
+}
+
+.title {
+  font-size: 4.5em;
+  color: #000000;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px; /* Abstand zwischen den Icons */
+  margin-top: 30px;
+}
+
+.contact-icon {
+  width: auto;
+  height: 10rem;
+  transition: transform 0.3s ease; /* Animation beim Hover */
+  color: #000; /* Schwarze Icons */
+}
+
+.contact-icon:hover {
+  transform: scale(1.1); /* Vergrößerung beim Hover */
+}
+
+/* Medienabfrage für kleinere Bildschirme */
+@media (max-width: 1000px) {
+  .contact-container {
+    margin-left: 0; /* Navbar-Verschiebung entfernen für kleinere Bildschirme */
     padding: 20px;
-    margin-left: 120px; /* Platz für die Navbar reservieren, falls nötig */
-    text-align: center;
-    padding-top: 60px; /* Zusätzlicher Abstand nach oben */
+    justify-content: flex-start; /* Icons weiter nach oben positionieren */
+    padding-top: 40px; /* Weniger Abstand nach oben für kleinere Bildschirme */
   }
-  
-    .title {
-    font-size: 3.5em;
-    color: #000000;
-    }
 
   .contact-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 80px; /* Abstand zwischen den Icons */
-    margin-top: 30px;
+    flex-direction: column; /* Icons untereinander anordnen */
+    gap: 20px; /* Anpassung des Abstands zwischen den Icons */
+    margin-top: 20px; /* Zusätzlicher Abstand nach oben */
   }
-  
-  .contact-icon {
-    width: auto;
-    height: 10rem;
-    transition: transform 0.3s ease; /* Animation beim Hover */
-    color: #000; /* Schwarze Icons */
-  }
-  
-  .contact-icon:hover {
-    transform: scale(1.1); /* Vergrößerung beim Hover */
-  }
-  
-  /* Medienabfrage für kleinere Bildschirme */
-  @media (max-width: 1000px) {
-    .contact-container {
-      margin-left: 0; /* Navbar-Verschiebung entfernen für kleinere Bildschirme */
-      padding: 20px;
-      justify-content: flex-start; /* Icons weiter nach oben positionieren */
-      padding-top: 40px; /* Weniger Abstand nach oben für kleinere Bildschirme */
-    }
-  
-    .contact-icons {
-      flex-direction: column; /* Icons untereinander anordnen */
-      gap: 20px; /* Anpassung des Abstands zwischen den Icons */
-      margin-top: 20px; /* Zusätzlicher Abstand nach oben */
-    }
-  }
-  
+}

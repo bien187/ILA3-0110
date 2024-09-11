@@ -7,8 +7,8 @@ const Home = () => {
       <div className="text-content">
         <h1 className="name">Ben Müller</h1>
         <p className="description">
-          <span className="highlight">Angehender Informatiker</span> mit einem{" "}
-          <span className="highlight">Auge fürs Detail</span>
+          <span className="highlight">Angehender Informatiker</span> mit einem Auge für{" "}
+          <span className="highlight"> das Wesentliche</span>
         </p>
       </div>
       <div className="image-content">

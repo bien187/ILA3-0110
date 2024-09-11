@@ -58,6 +58,7 @@ function Hobbies() {
           >
             Einige meiner Bilder
             <span className="hobbies-link-underline"></span>
+            
           </a>
         </div>
       </div>
