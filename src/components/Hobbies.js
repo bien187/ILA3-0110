@@ -47,8 +47,8 @@ function Hobbies() {
             und Büchern stetig erweitert und konnte so bereits viele Erfahrungen
             im Umgang mit einer Kamera sammeln. Ich fotografiere häufig in
             meiner Freizeit und in den Ferien. Ausserdem nehme ich meine Kamera
-            auch auf, bereits erwähnte, Flugshows mit und kann so zwei meiner
-            Hobbies zusammen ausleben.
+            auch auf Flugshows mit und kann so zwei meiner
+            Hobbies miteinander verbinden.
           </p>
           <a
             href="https://adobe.ly/4dQ1fM6"

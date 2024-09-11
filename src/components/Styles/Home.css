@@ -28,13 +28,13 @@
 
   /* Schriftstile */
   .name {
-    font-size: 7rem; /* Größte Schriftgröße für den Namen */
+    font-size: 6.8rem; /* Größte Schriftgröße für den Namen */
     color: #3498db; /* Farbe für den Namen, kann nach Wunsch geändert werden */
     margin: 0;
   }
 
   .description {
-    font-size: 2.7rem; /* Kleinere Schriftgröße für die Beschreibung */
+    font-size: 2.4rem; /* Kleinere Schriftgröße für die Beschreibung */
     color: #333; /* Standardfarbe für den Text */
   }
 
@@ -59,7 +59,7 @@
   }
 
   .profile-image {
-    width: 100%; /* Bild nimmt die gesamte Breite des Containers ein */
+    width: 90%; /* Bild nimmt die gesamte Breite des Containers ein */
     height: auto; /* Höhe des Bildes passt sich automatisch an */
     border-radius: 10px; /* Optionale Abrundung der Ecken des Bildes */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optionale Schatten für das Bild */

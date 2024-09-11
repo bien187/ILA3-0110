@@ -58,3 +58,10 @@ nav {
 main {
   padding: 20px;
 }
+/* Globale Skalierung für die gesamte React App */
+html, body, #root {
+  transform: scale(0.8); /* Skaliert die Seite auf 80% */
+  transform-origin: top left; /* Skalierung beginnt in der oberen linken Ecke */
+  width: 125%; /* Stellt sicher, dass die Seite die volle Breite einnimmt */
+  overflow-x: hidden; /* Verhindert horizontales Scrollen */
+}

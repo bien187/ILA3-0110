@@ -36,6 +36,7 @@ header {
   color: #000000;
   font-size: 4.5rem;
   padding-top: 8px;
+  text-align: center; /* Titel mittig ausrichten */
 }
 
 /* Gitterlayout für die Projektkarten */
@@ -66,7 +67,7 @@ header {
 /* Spezifischere Bild-Stile */
 .project-image.project-img {
   width: 100%;
-  height: 230px;
+  height: 185px;
   object-fit: fill;
 }
 
@@ -86,14 +87,15 @@ header {
   font-size: 1.8rem;
   margin-bottom: 7px;
   color: #333;
+  text-align: center; /* Projekt-Titel mittig ausrichten */
 }
 
 /* Spezifischere Stile für die Projektbeschreibung */
 .project-content p.project-description {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #353535;
   margin-bottom: 15px;
-  text-align: center;
+  text-align: justify; /* Text im Blocksatz */
 }
 
 /* Spezifischere Stile für die Links zu Code und Seite */
@@ -117,17 +119,19 @@ header {
 .project-link .underline,
 .website-link .underline {
   position: absolute;
-  left: 0;
+  left: 50%; /* Startpunkt in der Mitte */
   bottom: -1px;
   width: 0;
   height: 1.5px;
   background-color: #007bff;
-  transition: width 0.3s ease;
+  transition: width 0.3s ease, left 0.3s ease;
+  transform-origin: center; /* Ursprung der Transformation in der Mitte */
 }
 
 .project-link.project-link-btn:hover .underline,
 .website-link.website-link-btn:hover .underline {
   width: 100%;
+  left: 0; /* Unterstreichung auf volle Breite ausdehnen */
 }
 
 /* Anpassung für kleinere Bildschirme */
@@ -145,6 +149,7 @@ header {
   .project-content p.project-description {
     font-size: 1rem;
   }
+  
   .project-card.project-item.active {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     transform: scale(1.03);

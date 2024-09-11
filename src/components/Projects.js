@@ -16,8 +16,8 @@ function Projects() {
             <h3 className="project-title">Hornets Nest</h3>
             <p className="project-description">
               Hornets Nest war meine erste richtige Webseite. Mit ihr konnte ich
-              das erste Mal mein Interesse an der Aviatik und den Spaß vom
-              Programmieren einer Webseite miteinander verknüpfen. Mittlerweile
+              das erste Mal mein Interesse an der Aviatik und den Spaß den ich am
+              Programmieren habe in einer Webseite miteinander verbinden. Mittlerweile
               würde ich einiges anders machen und nicht nur mit HTML und CSS
               Dateien, sondern mit REACT arbeiten. Trotzdem bin ich stolz auf
               das damalige Ergebnis, da es doch einen ersten Meilenstein in

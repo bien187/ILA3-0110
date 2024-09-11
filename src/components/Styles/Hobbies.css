@@ -13,7 +13,6 @@ body {
   text-align: center;
   background-color: #ffffff;
   min-height: 100vh;
- 
 }
 
 /* Stil für die Hauptüberschrift */
@@ -21,6 +20,7 @@ body {
   font-size: 4.5rem;
   margin-bottom: 3%;
   color: #333;
+  text-align: center; /* Überschrift mittig ausrichten */
 }
 
 /* Stil für das Grid der Hobbies */
@@ -57,31 +57,20 @@ body {
   margin-bottom: 15px;
 }
 
-/* Stil für spezifische Icons 
-.sport-icon {
-  background-image: url('/path/to/sport-icon.png'); 
-}
-
-.aviation-icon {
-  background-image: url('/path/to/aviation-icon.png'); 
-}
-
-.photography-icon {
-  background-image: url('/path/to/photography-icon.png'); 
-}
-*/
 /* Stil für die Titel der Hobbies */
 .hobbies-title {
   font-size: 1.8rem;
   margin-bottom: 7px;
   color: #333;
+  text-align: center; /* Titel mittig ausrichten */
 }
 
 /* Stil für die Beschreibung der Hobbies */
 .hobbies-description {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #353535;
   margin-bottom: 15px;
+  text-align: justify; /* Text im Blocksatz */
 }
 
 /* Stil für den Link zu den Fotos */
@@ -97,17 +86,19 @@ body {
 /* Stil für die Unterstreichung des Fotos-Links */
 .hobbies-link-underline {
   position: absolute;
-  left: 0;
+  left: 50%; /* Startpunkt der Linie ist die Mitte */
   bottom: -1px;
   width: 0;
   height: 1.5px;
   background-color: #007bff; /* Die Farbe der Unterstreichung */
-  transition: width 0.3s ease;
+  transition: width 0.3s ease, left 0.3s ease;
+  transform-origin: center; /* Transformationsursprung auf die Mitte setzen */
 }
 
 /* Hover-Effekt für die Unterstreichung des Fotos-Links */
 .hobbies-photos-link:hover .hobbies-link-underline {
   width: 100%;
+  left: 0; /* Linke Position auf 0 setzen, damit die Linie sich nach links und rechts ausdehnt */
 }
 
 /* Stil für die Galerie der Fotografie */

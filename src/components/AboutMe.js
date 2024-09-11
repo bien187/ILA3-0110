@@ -7,16 +7,19 @@ const calculateAge = (birthDate) => {
   const birth = new Date(birthDate);
   let age = today.getFullYear() - birth.getFullYear();
   const monthDifference = today.getMonth() - birth.getMonth();
-  
-  if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birth.getDate())) {
+
+  if (
+    monthDifference < 0 ||
+    (monthDifference === 0 && today.getDate() < birth.getDate())
+  ) {
     age--;
   }
-  
+
   return age;
 };
 
 const AboutMe = () => {
-  const birthDate = '2007-02-27'; // Geburtsdatum im Format YYYY-MM-DD
+  const birthDate = "2007-02-27"; // Geburtsdatum im Format YYYY-MM-DD
   const age = calculateAge(birthDate);
 
   return (
@@ -44,6 +47,13 @@ const AboutMe = () => {
               <p>Informatikmittelschule Aarau</p>
             </div>
             <div className="info-box">
+              <h3>Stärken</h3>
+              <p>
+                teamorientiert, organisationsstark, neugierig, kreativ,
+                kommunikatiosstark, lernbereit
+              </p>
+            </div>
+            <div className="info-box">
               <h3>Hobbies</h3>
               <p>Sport, Aviatik & Fotografieren</p>
             </div>
@@ -62,7 +72,7 @@ const AboutMe = () => {
         <div className="skills-container">
           {/* Frontend Skills */}
           <h3>Frontend</h3>
-          
+
           <div className="skill">
             <span>HTML</span>
             <div className="progress-bar">
@@ -80,7 +90,7 @@ const AboutMe = () => {
             <div className="progress-bar">
               <div className="progress" style={{ width: "75%" }}></div>
             </div>
-          </div>  
+          </div>
           <div className="skill">
             <span>JavaScript</span>
             <div className="progress-bar">
@@ -93,7 +103,7 @@ const AboutMe = () => {
               <div className="progress" style={{ width: "50%" }}></div>
             </div>
           </div>
-        
+
           {/* Backend Skills */}
           <h3>Backend</h3>
           <div className="skill">

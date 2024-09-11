@@ -26,7 +26,7 @@
   
   .contact-icon {
     width: auto;
-    height: 14rem;
+    height: 10rem;
     transition: transform 0.3s ease; /* Animation beim Hover */
     color: #000; /* Schwarze Icons */
   }
