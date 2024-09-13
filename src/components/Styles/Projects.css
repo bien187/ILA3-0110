@@ -33,7 +33,7 @@ header {
 /* Spezifischere Überschrift-Stile */
 .projects-container h1.project-title {
   margin-bottom: 3%;
-  color: #000000;
+  color: #333;
   font-size: 4.5rem;
   padding-top: 8px;
   text-align: center; /* Titel mittig ausrichten */
@@ -149,7 +149,7 @@ header {
   .project-content p.project-description {
     font-size: 1rem;
   }
-  
+
   .project-card.project-item.active {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     transform: scale(1.03);

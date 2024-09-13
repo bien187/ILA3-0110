@@ -28,10 +28,12 @@
 .left-content h1 {
   font-size: 2.5em;
   margin-bottom: 10px;
+  color:#333;
 }
 
 .left-content p {
   font-size: 1.2em;
+  color:#333;
 }
 
 .right-side {

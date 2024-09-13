@@ -6,7 +6,7 @@ import "./Styles/Contact.css"; // Stelle sicher, dass du eine separate CSS-Datei
 function Contact() {
   return (
     <div className="contact-container">
-      <div className="title">Hier finden Sie mich:</div>
+      <h1 className="title">Hier finden Sie mich:</h1>
       <div className="contact-icons">
         <a
           href="https://www.linkedin.com/in/ben-m%C3%BCller-4b959a273/"
