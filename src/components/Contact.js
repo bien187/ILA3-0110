@@ -23,7 +23,7 @@ function Contact() {
           <FaGithub className="contact-icon" size={30} />
         </a>
         <a
-          href="mailto:Ben.Linus.Mueller@outlook.com"
+          href="mailto:ben.linus.mueller@outlook.com"
           target="_blank"
           rel="noopener noreferrer"
         >
