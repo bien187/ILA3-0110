@@ -83,6 +83,12 @@
   margin-bottom: 20px;
 }
 
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
 .skill-levels {
   display: flex;
   justify-content: space-between;
@@ -149,3 +155,66 @@
   height: 100%;
   border-left: 1px solid #ccc;
 }
+
+@media (max-width: 850px) {
+  .aboutme-wrapper {
+    margin-left: 0;
+  }
+
+  .aboutme-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right-side {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .info-box {
+    flex: 1 1 100%;
+  }
+
+  .left-content h1 {
+    font-size: 2em;
+  }
+
+  .left-content p {
+    font-size: 1em;
+  }
+
+  .skills-section h2 {
+    font-size: 1.8em;
+  }
+
+  .skill span {
+    font-size: 1em;
+  }
+
+  .skill-levels span {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 480px) {
+  .left-content h1 {
+    font-size: 1.8em;
+  }
+
+  .left-content p {
+    font-size: 0.9em;
+  }
+
+  .skills-section h2 {
+    font-size: 1.8em;
+  }
+
+  .skill span {
+    font-size: 0.9em;
+  }
+
+  .skill-levels span {
+    font-size: 0.7em;
+  }
+}
+  
