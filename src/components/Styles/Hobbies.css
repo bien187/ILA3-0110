@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 body {
@@ -7,7 +6,7 @@ body {
 
 .hobbies-main-container {
   padding: 40px 20px;
-  margin-left: 120px; 
+  margin-left: 120px;
   text-align: center;
   background-color: #ffffff;
   min-height: 100vh;
@@ -20,12 +19,76 @@ body {
   text-align: center;
 }
 
-
 .hobbies-item-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
 }
 
+.hobbies-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.hobbies-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
 
+.hobbies-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.hobbies-title {
+  font-size: 1.8rem;
+  margin-bottom: 7px;
+  color: #333;
+  text-align: center;
+}
+
+.hobbies-description {
+  font-size: 1.1rem;
+  color: #353535;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.hobbies-photos-link {
+  font-size: 1.15rem;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.hobbies-link-underline {
+  position: absolute;
+  left: 50%;
+  bottom: -1px;
+  width: 0;
+  height: 1.5px;
+  background-color: #007bff;
+  transition: width 0.3s ease, left 0.3s ease;
+  transform-origin: center;
+}
+
+.hobbies-photos-link:hover .hobbies-link-underline {
+  width: 100%;
+  left: 0;
+}
+
+.photography-gallery {
+  margin-top: 20px;
+  position: relative;
+}
