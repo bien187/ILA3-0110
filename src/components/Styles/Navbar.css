@@ -1,11 +1,10 @@
-/* Grundlegende Stile für die Navbar */
 .navbar-header {
   background-color: #333;
   display: flex;
   flex-direction: column;
+  height: 0%;
 }
 
-/* Standard-Layout für größere Bildschirme */
 .navbar {
   display: flex;
   flex-direction: column;
@@ -56,80 +55,65 @@
   width: 100%;
 }
 
-/* Menü-Toggle für kleine Bildschirme */
 .menu-toggle {
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 10%;
-  height: 21px;
+  width: 11%;
+  height: 4%;
   cursor: pointer;
-  margin-bottom: 20px;
   position: fixed;
-  top: 5px;
-  left: 10px;
+  top: 3%;
+  left: 15px;
   z-index: 1100;
-  background-color: #333;
-  padding: 8px;
-  border-radius: 5px;
 }
 
 .menu-icon {
   background-color: #fff;
-  height: 2.5px;
-  width: 97%;
+  height: 4px;
+  width: 100%;
   border-radius: 3px;
   transition: all 0.3s ease;
 }
 
-/* Das Hamburger-Menü für kleine Bildschirme anzeigen */
-@media (max-width: 844px) and (orientation: portrait) {
+@media (max-width: 850px) {
   .navbar {
     width: 100%;
-    max-width: 3000px;
-    height: 8%;
+    height: 100vh;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
     flex-direction: column;
-    justify-content: flex-start;
-    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+  }
+  .navbar-header {
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    height: 9.5%;
+  }
+
+  .navbar.open {
+    transform: translateX(0);
   }
 
   .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 1000%;
-    margin-top: 38px;
-    background-color: #333;
-    border-radius: 5px;
-  }
-
-  .nav-links.open {
     display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .nav-item {
-    font-size: 100%;
-    padding: 10px 15px;
-    margin: 0;
+    font-size: 140%;
+    padding: 15px 0;
   }
 
   .menu-toggle {
     display: flex;
-  }
-}
-
-/* Feinabstimmung für sehr kleine Bildschirme */
-@media (max-width: 450px) and (orientation: portrait) {
-  .nav-item {
-    font-size: 90%;
-    padding: 8px 10px;
-  }
-
-  .navbar {
-    padding: 0.5% 0;
-    height: 60px;
-  }
-
-  .main-content {
-    padding-top: 50px;
   }
 }

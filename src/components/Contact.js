@@ -1,7 +1,7 @@
 import React from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
-import "./Styles/Contact.css"; // Stelle sicher, dass du eine separate CSS-Datei für das Styling importierst
+import "./Styles/Contact.css"; 
 
 function Contact() {
   return (

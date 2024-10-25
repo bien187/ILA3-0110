@@ -1,5 +1,5 @@
 import React from "react";
-import "./Styles/Home.css"; // Importiere die CSS-Datei für die AboutMe-Seite
+import "./Styles/Home.css"; 
 
 const Home = () => {
   return (

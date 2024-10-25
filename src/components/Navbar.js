@@ -12,21 +12,21 @@ const Navbar = () => {
   };
 
   const handleLinkClick = () => {
-    setIsMenuOpen(false); // Menü minimieren, wenn ein Link angeklickt wird
+    setIsMenuOpen(false); 
   };
 
   return (
     <header className="navbar-header">
-      <nav className={`navbar ${isMenuOpen ? 'open' : ''}`}>
-        {/* Menü-Toggle für kleine Bildschirme */}
-        <div className="menu-toggle" onClick={handleMenuToggle}>
-          <span className={`menu-icon ${isMenuOpen ? 'open' : ''}`}></span>
-          <span className={`menu-icon ${isMenuOpen ? 'open' : ''}`}></span>
-          <span className={`menu-icon ${isMenuOpen ? 'open' : ''}`}></span>
-        </div>
+      {/* Menü-Toggle für kleine Bildschirme */}
+      <div className="menu-toggle" onClick={handleMenuToggle}>
+        <span className="menu-icon"></span>
+        <span className="menu-icon"></span>
+        <span className="menu-icon"></span>
+      </div>
 
-        {/* Navigationslinks */}
-        <div className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
+      {/* Navbar mit Links */}
+      <nav className={`navbar ${isMenuOpen ? "open" : ""}`}>
+        <div className={`nav-links ${isMenuOpen ? "open" : ""}`}>
           <Link
             to="/home"
             className={`nav-item ${currentPath === "/home" ? "active" : ""}`}

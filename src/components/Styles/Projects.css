@@ -121,3 +121,30 @@ header {
   width: 100%;
   left: 0;
 }
+
+@media (max-width: 850px) {
+  .projects-container {
+    margin-left: 0;
+    padding: 20px;
+    padding-top: 60px;
+  }
+
+  .project-content h3.project-title {
+    font-size: 1.8rem;
+  }
+
+  .project-content p.project-description {
+    font-size: 1rem;
+  }
+
+  .project-card.project-item.active {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.03);
+  }
+
+  .project-image.project-img {
+    width: 100%;
+    height: 200px;
+    object-fit: fill;
+  }
+}
