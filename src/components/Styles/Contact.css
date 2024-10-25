@@ -35,18 +35,5 @@
   transform: scale(1.1); /* Vergrößerung beim Hover */
 }
 
-/* Medienabfrage für kleinere Bildschirme */
-@media (max-width: 1000px) {
-  .contact-container {
-    margin-left: 0; /* Navbar-Verschiebung entfernen für kleinere Bildschirme */
-    padding: 20px;
-    justify-content: flex-start; /* Icons weiter nach oben positionieren */
-    padding-top: 40px; /* Weniger Abstand nach oben für kleinere Bildschirme */
-  }
 
-  .contact-icons {
-    flex-direction: column; /* Icons untereinander anordnen */
-    gap: 20px; /* Anpassung des Abstands zwischen den Icons */
-    margin-top: 20px; /* Zusätzlicher Abstand nach oben */
-  }
-}
+
