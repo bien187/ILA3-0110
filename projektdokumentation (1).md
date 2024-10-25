@@ -5,9 +5,12 @@ Ben Müller
 
 | Datum | Version | Zusammenfassung                                              |
 | ----- | ------- | ------------------------------------------------------------ |
-|  16.08.24     | 0.0.1   | Website mit REACT erstellt und an der Seite Home angefangen|
-|       | ...     |                                                              |
-|       | 1.0.0   |                                                              |
+|  23.08.24     | 0.0.1     |  Website mit REACT erstellt und an der Seite Home angefangen           |
+|  30.08.24     | 0.1.0  |  An der Seite AboutMe und Hobbies gearbeitet                                                             |
+| 06.09.24   | 1.0.0   | Alle Seiten grob fertiggestellt (Meilenstein 1)   |
+| 13.09.24   | 1.1.0   |   Alle Texte geschrieben  |
+| 14.10.24 (18.10.24)   |  1.5.0  | Design von allen Seiten fertig (Meilenstein 2)   |
+| 25.10.24   |  2.0.0  | Responsive Design und Seite veröffentlicht (Meilenstein 3)   |
 
 ## 1 Informieren
 
@@ -47,51 +50,50 @@ Ich möchte eine Portfolio-Seite über mich erstellen. Sie soll einen ersten Üb
 | 7.2  | Die Website ist geöffnet.                   | Zugriff über ein Smartphone          | Die Website wird responsiv dargestellt.      |
 
 
-### 1.4 Diagramme
-
-✍️Fügen Sie hier ein Use Case-Diagramm mit mindestens 3 Anwendungsfällen ein; und eine Skizze davon, wie Ihre Netzseite aussehen sollte.
-
 ## 2 Planen
 
 | AP-№ | Frist      | Zuständig | Beschreibung                                         | geplante Zeit |
 | ---- | ---------- | --------- | ---------------------------------------------------- | ------------- |
-| 1.A  |            | Ben       | Erstellen der Website-Struktur mit REACT             | 5 Stunden     |
-| 2.A  |            | Ben       | Implementierung der Seiten „Home“ und „Kontakt“      | 5 Stunden     |
-| 3.A  |            | Ben       | Implementierung der Seiten „Projekte“ und „Hobbies“  | 5 Stunden     |
-| 4.A  |            | Ben       | Implementierung der Seite „About Me“                 | 5 Stunden     |
-| 5.A  |            | Ben       | Schreiben und Einfügen aller Texte und Beschreibungen| 5 Stunden     |
-| 6.A  |            | Ben       | Gestaltung und Design der Website                    | 5 Stunden     |
-| 7.A  |            | Ben       | Umsetzung von Responsive Design und Veröffentlichung | 5 Stunden     |
+| 1.A  | 23.08.24   | Ben       | Erstellen der Website-Struktur mit REACT             | 5 Stunden     |
+| 2.A  | 30.08.24   | Ben       | Implementierung der Seiten „Home“, "About Me" und „Kontakt“      | 5 Stunden     |
+| 3.A  | 06.09.24   | Ben       | Implementierung der Seiten „Projekte“ und „Hobbies“  | 5 Stunden     |
+| 4.A  | 13.09.24   | Ben       | Schreiben und Einfügen aller Texte und Beschreibungen| 5 Stunden     |
+| 5.A  | 14.10.24 (18.10.24)  | Ben       | Gestaltung und Design der Website                    | 5 Stunden     |
+| 6.A  | 25.10.24   | Ben       | Umsetzung von Responsive Design und Veröffentlichung | 5 Stunden     |
 
-**Total:** 35 Stunden
-
-
-✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, auf die sich das Arbeitspaket bezieht, und `m` von `A` an nach oben buchstabiert. Beispiel: Das dritte Arbeitspaket, das die zweite User Story betrifft, hat also die Nummer `2.C`.
-
-✍️ Ein Arbeitspaket sollte etwa 45' für eine Person in Anspruch nehmen. Die totale Anzahl Arbeitspakete sollte etwa Folgendem entsprechen: `Anzahl R-Sitzungen` ╳ `Anzahl Gruppenmitglieder` ╳ `4`. Wenn Sie also zu dritt an einem Projekt arbeiten, für welches zwei R-Sitzungen geplant sind, sollten Sie auf `2` ╳ `3` ╳`4` = `24` Arbeitspakete kommen. Sollten Sie merken, dass Sie hier nicht genügend Arbeitspakte haben, denken Sie sich weitere "Kann"-User Stories für Kapitel 1.2 aus.
+**Total:** 30 Stunden
 
 ## 3 Entscheiden
 
-✍️ Dokumentieren Sie hier Ihre Entscheidungen und Annahmen, die Sie im Bezug auf Ihre User Stories und die Implementierung getroffen haben.
+Bei der Navbar für das Handy habe ich mich für eine Burgernavbar entschieden.
 
 ## 4 Realisieren
 
-| AP-№ | Datum | Zuständig | geplante Zeit | tatsächliche Zeit |
-| ---- | ----- | --------- | ------------- | ----------------- |
-| 1.A  |       |           |               |                   |
-| ...  |       |           |               |                   |
+| AP-№ | Datum      | Zuständig | geplante Zeit | tatsächliche Zeit |
+| ---- | ---------- | --------- | ------------- | ----------------- |
+| 1.A  | 23.08.24   | Ben       | 5 Stunden     | 5 Stunden         |
+| 2.A  | 30.08.24   | Ben       | 5 Stunden     | 5 Stunden         |
+| 3.A  | 06.09.24   | Ben       | 5 Stunden     | 5 Stunden         |
+| 4.A  | 13.09.24   | Ben       | 5 Stunden     | 5 Stunden         |
+| 5.A  | 14.10.24  (18.10.24) | Ben       | 5 Stunden     | 5 Stunden         |
+| 6.A  | 25.10.24   | Ben       | 5 Stunden     | 5 Stunden         |
 
-✍️ Tragen Sie jedes Mal, wenn Sie ein Arbeitspaket abschließen, hier ein, wie lang Sie effektiv dafür hatten.
+
 
 ## 5 Kontrollieren
 
-| TC-№ | Datum | Resultat | Tester |
-| ---- | ----- | -------- | ------ |
-| 1.1  |       |          |        |
-| ...  |       |          |        |
+| TC-№ | Datum      | Resultat | Tester |
+| ---- | ---------- | -------- | ------ |
+| 1.1  | 25.10.24   | ok       | Ben    |
+| 2.1  | 25.10.24   | ok       | Ben    |
+| 2.2  | 25.10.24   | ok       | Ben    |
+| 3.1  | 25.10.24   | ok       | Ben    |
+| 3.2  | 25.10.24   | ok       | Ben    |
+| 4.1  | 25.10.24   | ok       | Ben    |
+| 5.1  | 25.10.24   | ok       | Ben    |
+| 6.1  | 25.10.24   | ok       | Ben    |
+| 7.1  | 25.10.24   | ok       | Ben    |
+| 7.2  | 25.10.24   | ok       | Ben    |
 
-✍️ Vergessen Sie nicht, ein Fazit hinzuzufügen, welches das Test-Ergebnis einordnet.
 
-## 6 Auswerten
 
-✍️ Fügen Sie hier eine Verknüpfung zu Ihrem Lern-Bericht ein.
