@@ -1,14 +1,14 @@
 .contact-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Inhalt weiter oben positionieren */
+  justify-content: flex-start;
   align-items: center;
-  height: 100vh; /* Vollbildhöhe */
-  background-color: #ffffff; /* Hintergrundfarbe der Seite */
+  height: 100vh;
+  background-color: #ffffff;
   padding: 20px;
-  margin-left: 120px; /* Platz für die Navbar reservieren, falls nötig */
+  margin-left: 120px;
   text-align: center;
-  padding-top: 60px; /* Zusätzlicher Abstand nach oben */
+  padding-top: 60px;
 }
 
 .title {
@@ -20,20 +20,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 80px; /* Abstand zwischen den Icons */
+  gap: 80px;
   margin-top: 45px;
 }
 
 .contact-icon {
   width: auto;
   height: 10rem;
-  transition: transform 0.3s ease; /* Animation beim Hover */
-  color: #000; /* Schwarze Icons */
+  transition: transform 0.3s ease;
+  color: #000;
 }
 
 .contact-icon:hover {
-  transform: scale(1.1); /* Vergrößerung beim Hover */
+  transform: scale(1.1);
 }
-
-
-
