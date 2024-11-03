@@ -35,16 +35,16 @@
 }
 
 .highlight {
-  font-weight: bold;
-  color: #e67e22;
+
+  color: #333;
 }
 
 .highlight:nth-of-type(1) {
-  color: #1abc9c;
+  color: #333;
 }
 
 .highlight:nth-of-type(2) {
-  color: #e74c3c;
+  color: #333;
 }
 
 .image-content {

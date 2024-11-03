@@ -9,13 +9,13 @@ const AboutMe = () => {
 
   return (
     <div className="aboutme-wrapper">
-      {/* About Me Section */}
+
       <section className="aboutme-section">
         <div className="aboutme-container">
           <div className="left-side">
             <div className="left-content">
               <h1>Ben Müller</h1>
-              <h2>Meine Person, Meine Fähigkeiten</h2>
+              <h2>Meine Person</h2>
             </div>
           </div>
           <div className="right-side">

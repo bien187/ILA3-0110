@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+
 .aboutme-wrapper {
-  font-family: 'Arial', sans-serif;
   padding: 0 20px;
   margin-left: 120px;
 }
@@ -24,14 +25,19 @@
 }
 
 .left-content h1 {
-  font-size: 2.5em;
+  font-size: 4em;
   margin-bottom: 10px;
   color: #333;
 }
 
 .left-content p {
-  font-size: 1.2em;
+  font-size: 2em;
   color: #333;
+}
+
+.left-content h2 {
+ font-size: 2rem;
+ color: #333; 
 }
 
 .right-side {
@@ -50,7 +56,7 @@
 }
 
 .skills-section h3 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   margin-bottom: 10px;
   padding: 10px;
   border: 1px solid #d3d3d3;
@@ -79,8 +85,9 @@
 }
 
 .skills-section h2 {
-  font-size: 2em;
+  font-size: 2rem;
   margin-bottom: 20px;
+  color: #333;
 }
 
 .skills-container {

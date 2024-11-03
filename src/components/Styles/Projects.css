@@ -4,17 +4,7 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #000;
-  color: #fff;
-  z-index: 1000;
-  padding: 10px 20px;
-  box-sizing: border-box;
-}
+
 
 .projects-container {
   padding: 40px 20px;
