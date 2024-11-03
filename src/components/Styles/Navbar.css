@@ -17,6 +17,7 @@
   left: 0;
   top: 0;
   transition: width 0.3s ease;
+  align-items: center;
 }
 
 .nav-links {
@@ -95,11 +96,11 @@
     background-color: #333;
     display: flex;
     flex-direction: column;
-    height: 9.5%;
+    height: 30px;
   }
 
   .navbar.open {
-    transform: translateX(0);
+    transform: translateX(-5%);
   }
 
   .nav-links {

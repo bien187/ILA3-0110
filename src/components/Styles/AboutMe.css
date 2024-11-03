@@ -1,125 +1,96 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
 
 .aboutme-wrapper {
-  padding: 0 20px;
-  margin-left: 120px;
-}
-
-.aboutme-section,
-.skills-section {
-  margin-bottom: 50px;
-}
-
-.aboutme-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  background-color: #f4f4f4;
+  flex-direction: column; /* Ändert die Richtung auf Spalte */
+  align-items: center; /* Zentriert die Elemente horizontal */
   padding: 20px;
-  border-radius: 8px;
 }
 
-.left-side {
-  flex: 1;
+.aboutme-titel {
+  text-align: center; /* Zentriert den Titel */
+  font-size: 2.5rem;
+  margin-left: 120px;
+  color: #333;
 }
 
-.left-content h1 {
-  font-size: 4em;
+.aboutme-section {
+  display: flex; /* Container nebeneinander */
+  justify-content: space-between; /* Verteilt den Platz zwischen den Containern */
+  width: 100%; /* Maximale Breite */
+  max-width: 1200px; /* Maximale Breite für bessere Lesbarkeit */
+  position: relative; /* Ermöglicht absolute Positionierung der Container */
+  z-index: -1; /* Setzt die Schicht nach hinten */
+}
+
+.aboutme-container,
+.skills-container {
+  flex: 2; /* Beide Container nehmen mehr Platz ein */
+  max-width: 800px; /* Maximalbreite erhöhen */
+  background-color: #ffffff; /* Hintergrundfarbe für modernes Design */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Tiefe durch Schatten */
+  padding: 40px 20px;
+  border-radius: 20px;
+  margin: 20px; /* Abstand zwischen den Containern erhöhen */
+  text-align: center;
+  margin-left: 120px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-container:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.03);
+}
+
+.aboutme-container:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.03);
+}
+
+.left-content h2 {
+  font-size: 2.5em;
   margin-bottom: 10px;
   color: #333;
 }
 
 .left-content p {
-  font-size: 2em;
-  color: #333;
-}
-
-.left-content h2 {
- font-size: 2rem;
- color: #333; 
-}
-
-.right-side {
-  flex: 1;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.info-box {
-  background-color: #fff;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  flex: 1 1 45%;
-}
-
-.skills-section h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #d3d3d3;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-}
-
-.skills-container {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-
-.skills-container > h3 {
-  margin-top: 0;
-}
-
-.info-box h3 {
-  margin-bottom: 5px;
-  font-size: 1.1em;
-  color: #333;
-}
-
-.skills-section {
-  text-align: center;
-}
-
-.skills-section h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.skills-container {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-
-.skill-levels {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-  position: relative;
-}
-
-.skill-levels span {
-  font-size: 0.9em;
+  font-size: 1.2em;
   color: #555;
-  width: 25%;
-  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Abstand zwischen den Skill-Bars */
+}
+
+.skills-container h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #333;
 }
 
 .skill {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
+}
+
+.placeholder {
+  height: 20px; /* Höhe des Platzhalters */
+  background-color: transparent; /* Hintergrundfarbe kann transparent sein */
 }
 
 .skill span {
   flex: 1;
   font-size: 1.1em;
+  color: #333;
+}
+
+hr {
+  border: 1px solid #ccc; /* Farbe der Linie */
+  margin: 20px 0; /* Abstand oben und unten */
 }
 
 .progress-bar {
@@ -139,89 +110,33 @@
   transition: width 0.5s ease;
 }
 
-.skill-bar {
-  position: relative;
-}
 
-.skill-bar::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 33.33%;
-  height: 100%;
-  border-right: 1px solid #ccc;
-}
-
-.skill-bar::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 66.66%;
-  width: 33.33%;
-  height: 100%;
-  border-left: 1px solid #ccc;
-}
-
+/* Responsive Design */
 @media (max-width: 850px) {
-  .aboutme-wrapper {
-    margin-left: 0;
-  }
-
-  .aboutme-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .right-side {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .info-box {
-    flex: 1 1 100%;
+  .aboutme-section {
+    flex-direction: column; /* Bei kleinerem Bildschirm werden die Container untereinander angeordnet */
   }
 
   .left-content h1 {
     font-size: 2em;
   }
 
+  .aboutme-titel {
+    margin-right: 100px;
+    font-size: 2rem;
+  }
+
   .left-content p {
     font-size: 1em;
   }
 
-  .skills-section h2 {
-    font-size: 1.8em;
-  }
-
-  .skill span {
-    font-size: 1em;
-  }
-
-  .skill-levels span {
-    font-size: 0.8em;
+  /* Setze eine feste Breite für die Container */
+  .aboutme-container,
+  .skills-container {
+    width: calc(100% - 14mm); /* Gesamtbreite minus 7mm auf jeder Seite */
+    max-width: 750px; /* Maximale Breite */
+    margin: 0 auto; /* Zentriert die Container */
+    padding: 0 7mm; /* Fügt 7mm Padding auf beiden Seiten hinzu */
+    margin-bottom: 7mm; /* Fügt 7mm Abstand auf jeder Seite hinzu */
   }
 }
-
-@media (max-width: 480px) {
-  .left-content h1 {
-    font-size: 1.8em;
-  }
-
-  .left-content p {
-    font-size: 0.9em;
-  }
-
-  .skills-section h2 {
-    font-size: 1.8em;
-  }
-
-  .skill span {
-    font-size: 0.9em;
-  }
-
-  .skill-levels span {
-    font-size: 0.7em;
-  }
-}
-  

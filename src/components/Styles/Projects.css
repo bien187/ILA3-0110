@@ -116,7 +116,9 @@ body {
   .projects-container {
     margin-left: 0;
     padding: 20px;
-    padding-top: 60px;
+  
+    position: relative; /* Ermöglicht absolute Positionierung der Container */
+    z-index: -1; /* Setzt die Schicht nach hinten */
   }
 
   .project-content h3.project-title {
