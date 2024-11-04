@@ -63,6 +63,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px; /* Abstand zwischen den Skill-Bars */
+  margin-bottom: 1.6%;
 }
 
 .skills-container h2 {
@@ -137,6 +138,11 @@ hr {
     max-width: 750px; /* Maximale Breite */
     margin: 0 auto; /* Zentriert die Container */
     padding: 0 7mm; /* Fügt 7mm Padding auf beiden Seiten hinzu */
-    margin-bottom: 7mm; /* Fügt 7mm Abstand auf jeder Seite hinzu */
+    margin-bottom: 3%; /* Fügt 7mm Abstand auf jeder Seite hinzu */
+   
+  }
+
+  .skills-container {
+    padding-bottom: 7%;
   }
 }

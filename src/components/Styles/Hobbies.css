@@ -10,6 +10,7 @@ body {
   text-align: center;
   background-color: #ffffff;
   min-height: 100vh;
+ 
 }
 
 .hobbies-heading {
@@ -97,6 +98,10 @@ body {
   .hobbies-main-container {
     margin-left: 0;
     padding: 20px;
+ 
+    position: relative;
+   
+    z-index: -1; /* Container wird unter allen anderen Elementen angezeigt */
   }
 
   .gallery-carousel {
@@ -107,3 +112,4 @@ body {
     max-width: 150px;
   }
 }
+

@@ -1,12 +1,6 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
-
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import Hobbies from "./components/Hobbies";
@@ -19,9 +13,9 @@ const App = () => {
       <Navbar />
       <main>
         <Routes>
-          {/* Umleitung von "/" auf "/home" */}
-          <Route path="/" element={<Navigate to="/home" />} />
-          <Route path="/home" element={<Home />} />
+          {/* Rendern der Startseite direkt auf "/" ohne Umleitung */}
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} /> {/* Optional, falls weiterhin als "/home" verfügbar */}
           <Route path="/aboutme" element={<AboutMe />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/hobbies" element={<Hobbies />} />
