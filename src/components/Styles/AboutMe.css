@@ -72,6 +72,12 @@
   color: #333;
 }
 
+
+.info-box p {
+  font-size: 1.2em;
+  color: #333;
+}
+
 .skill {
   display: flex;
   align-items: center;
@@ -85,7 +91,7 @@
 
 .skill span {
   flex: 1;
-  font-size: 1.1em;
+  font-size: 1.2em;
   color: #333;
 }
 
