@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+
 .navbar-header {
   background-color: #333;
   display: flex;
@@ -34,6 +36,7 @@
   padding: 10px 20px;
   margin: 15px 0;
   transition: color 0.2s ease;
+  font-family: "Lato", sans-serif;
 }
 
 .nav-item:hover,
@@ -92,6 +95,7 @@
     transition: transform 0.3s ease;
     z-index: 1000;
   }
+
   .navbar-header {
     background-color: #333;
     display: flex;

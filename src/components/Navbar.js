@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   const handleLinkClick = () => {
-    setIsMenuOpen(false); 
+    setIsMenuOpen(false);
   };
 
   return (

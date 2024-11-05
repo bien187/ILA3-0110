@@ -88,4 +88,22 @@
     display: flex;
     justify-content: center;
   }
+
+.nav-item .underline {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #ffffff;
+  transition: width 0.3s ease, bottom 0.3s ease; 
+}
+
+/
+.nav-item:hover .underline,
+.nav-item.active .underline {
+  width: 100%;
+  bottom: 4px; 
+}
+
 }
