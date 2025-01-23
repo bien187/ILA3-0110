@@ -1,0 +1,126 @@
+/* Stile für die Navbar und Header */
+.navbar-header {
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Standard-Layout für größere Bildschirme (Seitenleiste links) */
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    height: 100vh;
+    width: 97px;
+    background-color: #333;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+  
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .nav-item {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-size: 120%;
+    padding: 10px 20px;
+    margin: 15px 0;
+    transition: color 0.2s ease;
+  }
+  
+  .nav-item:hover,
+  .nav-item.active {
+    color: #bdbdbd;
+  }
+  
+  .nav-item .underline {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-item:hover .underline,
+  .nav-item.active .underline {
+    width: 100%;
+  }
+  
+  /* Stile für den Hauptinhalt */
+  .main-content {
+    margin-left: 117px; /* Platz für die Navbar reservieren (97px + 20px Padding) */
+    padding: 20px;
+  }
+  
+  /* Anpassung für mittlere Bildschirme (Navbar wird kleiner) */
+  @media (max-width: 1024px) {
+    .navbar {
+      width: 80px;
+    }
+    .main-content {
+      margin-left: 100px;
+    }
+    .nav-item {
+      font-size: 110%;
+      padding: 8px 15px;
+    }
+  }
+  
+  /* Anpassung für kleinere Bildschirme (Navbar als Kopfzeile oben) */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: row;
+      justify-content: center;
+      height: auto;
+      width: 100%;
+      padding: 0.7% 0;
+      background-color: #333;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+  
+    .nav-links {
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100%;
+    }
+  
+    .nav-item {
+      font-size: 100%;
+      padding: 10px 15px;
+      margin: 0 10px;
+    }
+  
+    /* Hauptinhalt wird nicht mehr nach rechts verschoben */
+    .main-content {
+      margin-left: 0;
+      padding-top: 60px; /* Platz für die Navbar oben schaffen */
+    }
+  }
+  
+  /* Feinabstimmung für sehr kleine Bildschirme */
+  @media (max-width: 480px) {
+    .nav-item {
+      font-size: 90%;
+      padding: 8px 10px;
+    }
+  
+    .navbar {
+      padding: 0.5% 0;
+    }
+  
+    .main-content {
+      padding-top: 50px;
+    }
+  }
+  

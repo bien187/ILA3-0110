@@ -1,45 +1,52 @@
+/* Importiere die Schriftart Lato von Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
+/* Globaler Stil: Setze die Schriftart auf den gesamten Body */
 body {
   font-family: "Lato", sans-serif;
 }
 
+/* Stil für den Container der Hobbies-Seite */
 .hobbies-main-container {
   padding: 40px 20px;
-  margin-left: 120px;
+  margin-left: 120px; /* Platz für die Navbar reservieren */
   text-align: center;
   background-color: #ffffff;
   min-height: 100vh;
- 
 }
 
+/* Stil für die Hauptüberschrift */
 .hobbies-heading {
   font-size: 4.5rem;
   margin-bottom: 3%;
   color: #333;
-  text-align: center;
+  text-align: center; /* Überschrift mittig ausrichten */
 }
 
+/* Stil für das Grid der Hobbies */
 .hobbies-item-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
 }
 
+/* Stil für die einzelnen Hobby-Karten */
 .hobbies-card {
   background-color: #fff;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Hover-Effekt für die Hobby-Karten */
 .hobbies-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* Stil für die Icons innerhalb der Hobby-Karten */
 .hobbies-icon {
   width: 60px;
   height: 60px;
@@ -50,20 +57,23 @@ body {
   margin-bottom: 15px;
 }
 
+/* Stil für die Titel der Hobbies */
 .hobbies-title {
   font-size: 1.8rem;
   margin-bottom: 7px;
   color: #333;
-  text-align: center;
+  text-align: center; /* Titel mittig ausrichten */
 }
 
+/* Stil für die Beschreibung der Hobbies */
 .hobbies-description {
   font-size: 1.1rem;
-  color: #333;
+  color: #353535;
   margin-bottom: 15px;
-  text-align: justify;
+  text-align: justify; /* Text im Blocksatz */
 }
 
+/* Stil für den Link zu den Fotos */
 .hobbies-photos-link {
   font-size: 1.15rem;
   color: #007bff;
@@ -73,35 +83,35 @@ body {
   transition: color 0.3s ease;
 }
 
+/* Stil für die Unterstreichung des Fotos-Links */
 .hobbies-link-underline {
   position: absolute;
-  left: 50%;
+  left: 50%; /* Startpunkt der Linie ist die Mitte */
   bottom: -1px;
   width: 0;
   height: 1.5px;
-  background-color: #007bff;
+  background-color: #007bff; /* Die Farbe der Unterstreichung */
   transition: width 0.3s ease, left 0.3s ease;
-  transform-origin: center;
+  transform-origin: center; /* Transformationsursprung auf die Mitte setzen */
 }
 
+/* Hover-Effekt für die Unterstreichung des Fotos-Links */
 .hobbies-photos-link:hover .hobbies-link-underline {
   width: 100%;
-  left: 0;
+  left: 0; /* Linke Position auf 0 setzen, damit die Linie sich nach links und rechts ausdehnt */
 }
 
+/* Stil für die Galerie der Fotografie */
 .photography-gallery {
   margin-top: 20px;
   position: relative;
 }
 
-@media (max-width: 850px) {
+/* Medienabfrage für kleinere Bildschirme */
+@media (max-width: 768px) {
   .hobbies-main-container {
     margin-left: 0;
     padding: 20px;
- 
-    position: relative;
-   
-    z-index: -1; /* Container wird unter allen anderen Elementen angezeigt */
   }
 
   .gallery-carousel {
@@ -112,4 +122,3 @@ body {
     max-width: 150px;
   }
 }
-

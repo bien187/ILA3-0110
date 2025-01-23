@@ -1,0 +1,60 @@
+/* Importiere Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+/* Stil für den Container der Home-Seite */
+.home-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh; /* Vollbildhöhe */
+    padding: 20px;
+    background-color: #ffffff; /* Hintergrundfarbe der Seite */
+    margin-left: 120px;
+    font-family: 'Lato', sans-serif; /* Schriftart für die gesamte Seite */
+}
+
+.text-content {
+    flex: 1; /* Textbereich nimmt die Hälfte der Seite ein */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertikale Zentrierung */
+    align-items: center; /* Horizontale Zentrierung */
+    text-align: center; /* Textausrichtung */
+    max-width: 50%;
+}
+
+.name {
+    font-size: 7rem; /* Größte Schriftgröße für den Namen */
+    color: #3498db; /* Farbe für den Namen, kann nach Wunsch geändert werden */
+    margin: 0;
+}
+
+.description {
+    font-size: 2.7rem; /* Kleinere Schriftgröße für die Beschreibung */
+    color: #333; /* Standardfarbe für den Text */
+}
+
+.highlight {
+    font-weight: bold;
+    color: #e67e22; /* Farbe für die hervorgehobenen Wörter */
+}
+
+.highlight:nth-of-type(1) {
+    color: #1abc9c; /* Eine andere Farbe für "Informatiker" */
+}
+
+.highlight:nth-of-type(2) {
+    color: #e74c3c; /* Eine andere Farbe für "Auge fürs Detail" */
+}
+
+/* Stil für den Bildbereich */
+.image-content {
+    max-width: 50%; /* Begrenze die Breite des Bildes */
+}
+
+.profile-image {
+    width: 50%; /* Bild nimmt die gesamte Breite des Containers ein */
+    height: auto; /* Höhe des Bildes passt sich automatisch an */
+    border-radius: 10px; /* Optionale Abrundung der Ecken des Bildes */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Optionale Schatten für das Bild */
+}

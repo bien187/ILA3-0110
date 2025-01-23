@@ -17,16 +17,14 @@ const Navbar = () => {
 
   return (
     <header className="navbar-header">
-      {/* Menü-Toggle für kleine Bildschirme */}
-      <div className="menu-toggle" onClick={handleMenuToggle}>
-        <span className="menu-icon"></span>
-        <span className="menu-icon"></span>
-        <span className="menu-icon"></span>
-      </div>
+      <nav className={`navbar ${isMenuOpen ? 'open' : ''}`}>
+        <div className="menu-toggle" onClick={handleMenuToggle}>
+          <span className={`menu-icon ${isMenuOpen ? 'open' : ''}`}></span>
+          <span className={`menu-icon ${isMenuOpen ? 'open' : ''}`}></span>
+          <span className={`menu-icon ${isMenuOpen ? 'open' : ''}`}></span>
+        </div>
 
-      {/* Navbar mit Links */}
-      <nav className={`navbar ${isMenuOpen ? "open" : ""}`}>
-        <div className={`nav-links ${isMenuOpen ? "open" : ""}`}>
+        <div className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
           <Link
             to="/home"
             className={`nav-item ${currentPath === "/home" ? "active" : ""}`}

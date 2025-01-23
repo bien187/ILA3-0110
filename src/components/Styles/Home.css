@@ -1,109 +1,97 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+  /* Importiere Google Fonts */
+  @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
 
-.home-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  padding: 20px;
-  padding-left: 120px;
-  background-color: #ffffff;
-  font-family: "Lato", sans-serif;
-  box-sizing: border-box;
-}
-
-.text-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  max-width: 50%;
-}
-
-.name {
-  font-size: 6.8rem;
-  color: #3498db;
-  margin: 0;
-}
-
-.description {
-  font-size: 2.4rem;
-  color: #333;
-}
-
-.highlight {
-
-  color: #333;
-}
-
-.highlight:nth-of-type(1) {
-  color: #333;
-}
-
-.highlight:nth-of-type(2) {
-  color: #333;
-}
-
-.image-content {
-  max-width: 50%;
-  display: flex;
-  justify-content: center;
-}
-
-.profile-image {
-  width: 90%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-@media (max-width: 850px) {
+  /* Stil für den Container der Home-Seite */
   .home-container {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align: center;
+    display: flex;
+    flex-direction: row; /* Standardlayout: Text und Bild nebeneinander */
+    justify-content: center; /* Zentrieren des Inhalts horizontal */
+    align-items: center; /* Zentrieren des Inhalts vertikal */
+    height: 100vh; /* Vollbildhöhe */
+    padding: 20px;
+    padding-left: 120px; /* Platz für die Navbar */
+    background-color: #ffffff; /* Hintergrundfarbe der Seite */
+    font-family: "Lato", sans-serif; /* Schriftart für die gesamte Seite */
+    box-sizing: border-box; /* Box-Modell auf Padding und Border einbeziehen */
   }
 
+  /* Flexbox für den Textbereich */
   .text-content {
-    max-width: 90%;
-    margin-bottom: 20px;
+    flex: 1; /* Textbereich nimmt die Hälfte der Seite ein */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertikale Zentrierung im Textbereich */
+    align-items: center; /* Horizontale Zentrierung im Textbereich */
+    text-align: center; /* Textausrichtung */
+    max-width: 50%;
   }
 
+  /* Schriftstile */
   .name {
-    font-size: 4rem;
+    font-size: 6.8rem; /* Größte Schriftgröße für den Namen */
+    color: #3498db; /* Farbe für den Namen, kann nach Wunsch geändert werden */
+    margin: 0;
   }
 
   .description {
-    font-size: 1.8rem;
+    font-size: 2.4rem; /* Kleinere Schriftgröße für die Beschreibung */
+    color: #333; /* Standardfarbe für den Text */
   }
 
+  .highlight {
+    font-weight: bold;
+    color: #e67e22; /* Farbe für die hervorgehobenen Wörter */
+  }
+
+  .highlight:nth-of-type(1) {
+    color: #1abc9c; /* Eine andere Farbe für "Informatiker" */
+  }
+
+  .highlight:nth-of-type(2) {
+    color: #e74c3c; /* Eine andere Farbe für "Auge fürs Detail" */
+  }
+
+  /* Stil für den Bildbereich */
   .image-content {
-    max-width: 90%;
-    display: flex;
-    justify-content: center;
+    max-width: 50%; /* Begrenze die Breite des Bildes */
+    display: flex; /* Flexbox für die Bildausrichtung */
+    justify-content: center; /* Zentrieren des Bildes horizontal */
   }
 
-.nav-item .underline {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 3px;
-  background-color: #ffffff;
-  transition: width 0.3s ease, bottom 0.3s ease; 
-}
+  .profile-image {
+    width: 90%; /* Bild nimmt die gesamte Breite des Containers ein */
+    height: auto; /* Höhe des Bildes passt sich automatisch an */
+    border-radius: 10px; /* Optionale Abrundung der Ecken des Bildes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optionale Schatten für das Bild */
+  }
 
-/
-.nav-item:hover .underline,
-.nav-item.active .underline {
-  width: 100%;
-  bottom: 4px; 
-}
+  /* Media Query für kleinere Bildschirme */
+  @media (max-width: 768px) {
+    .home-container {
+      flex-direction: column; /* Layout: Text über dem Bild */
+      justify-content: center; /* Zentrieren des Inhalts vertikal */
+      align-items: center; /* Zentrieren des Inhalts horizontal */
+      padding-left: 20px; /* Mehr Abstand auf der linken Seite */
+      padding-right: 20px; /* Mehr Abstand auf der rechten Seite */
+      text-align: center; /* Textausrichtung für kleinere Bildschirme */
+    }
 
-}
+    .text-content {
+      max-width: 90%; /* Etwas größere Breite für den Textbereich auf kleinen Bildschirmen */
+      margin-bottom: 20px; /* Abstand nach unten, um Platz für das Bild zu schaffen */
+    }
+
+    .name {
+      font-size: 4rem; /* Kleinere Schriftgröße für den Namen auf kleinen Bildschirmen */
+    }
+
+    .description {
+      font-size: 1.8rem; /* Kleinere Schriftgröße für die Beschreibung auf kleinen Bildschirmen */
+    }
+
+    .image-content {
+      max-width: 90%; /* Etwas größere Breite für das Bild auf kleinen Bildschirmen */
+      display: flex; /* Flexbox für die Bildausrichtung */
+      justify-content: center; /* Zentrieren des Bildes horizontal */
+    }
+  }

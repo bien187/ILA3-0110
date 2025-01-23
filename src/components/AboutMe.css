@@ -1,0 +1,77 @@
+/* Stile für den Wrapper, der den Block zentriert */
+.aboutme-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Höhe auf die gesamte Bildschirmhöhe setzen */
+    background-color: #ffffff; /* Hintergrundfarbe der Seite */
+  }
+  
+  /* Stile für den Container des blauen Blocks */
+  .aboutme-container {
+    background-color: #3498db; /* Blaue Hintergrundfarbe */
+    color: #ffffff; /* Weiße Textfarbe */
+    padding: 20px;
+    border-radius: 80px; /* Abgerundete Ecken */
+    display: flex;
+    justify-content: space-between;
+    width: 65%; /* Breite des Blocks anpassen */
+    max-width: 80%; /* Maximale Breite */
+  }
+  
+  /* Stile für die linke Seite */
+  .left-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .left-content {
+    text-align: center; /* Zentriert den Text innerhalb der linken Seite */
+  }
+  
+  .left-side h1 {
+    font-size: 5em; /* Größe für den Namen */
+    margin-left: 15px;
+    margin-bottom: 5px;
+  }
+  
+  .left-side p {
+    font-size: 3em; /* Größe für "Das bin ich:" */
+    margin: 0;
+  }
+  
+  /* Stile für die rechte Seite */
+  .right-side {
+    flex: 2;
+    margin-right: 0%;
+  }
+  
+  .info-box {
+    margin-bottom: 15px;
+  }
+  
+  .info-box h3 {
+    font-size: 2em; /* Größe der Titel */
+    margin: 0 0 5px 15%;
+  }
+  
+  .info-box p {
+    margin: 0 0 5px 15%;
+    font-size: 1.5em; /* Größe der Fakten */
+  }
+  
+  /* Responsive Anpassungen */
+  @media (max-width: 768px) {
+    .aboutme-container {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 90%; /* Breite anpassen */
+    }
+  
+    .left-side {
+      margin-bottom: 20%;
+    }
+  }
+  
